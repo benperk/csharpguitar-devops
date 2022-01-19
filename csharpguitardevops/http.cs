@@ -17,7 +17,7 @@ namespace csharpguitardevops
             [HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)] HttpRequest req,
             ILogger log)
         {
-            log.LogInformation("C# HTTP trigger function processed a request.");
+            log.LogInformation("C# HTTP trigger function processed a request. #1");
 
             string name = req.Query["name"];
 
